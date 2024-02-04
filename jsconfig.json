@@ -1,7 +1,10 @@
 {
   "compilerOptions": {
+    "module": "ES6",
+    "jsx": "preserve",
     "paths": {
       "@/*": ["./src/*"]
     }
-  }
+  },
+  "exclude": ["node_modules", "**/node_modules/*"]
 }
