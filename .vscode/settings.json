@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "*.js": "javascriptreact"
-    },
-    "javascript.suggest.autoImports": true,
-    "typescript.suggest.autoImports": true
-}

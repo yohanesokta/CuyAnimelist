@@ -7,7 +7,7 @@ const InputSearch = () => {
     const router = useRouter()
     const handleSearch = (event) => {
         event.preventDefault()
-        if (searchRef.current.value.length !== 0) {
+        if (searchRef.current.value.length > 0) {
             router.push(`/search/${searchRef.current.value}`)
         }
     }
