@@ -7,7 +7,9 @@ const InputSearch = () => {
     const router = useRouter()
     const handleSearch = (event) => {
         event.preventDefault()
-        router.push(`/search/${searchRef.current.value}`)
+        if (searchRef.current.value.length !== 0) {
+            router.push(`/search/${searchRef.current.value}`)
+        }
     }
     const Submit = (e) => {
         e.preventDefault()
