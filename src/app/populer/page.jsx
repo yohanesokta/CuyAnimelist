@@ -3,7 +3,7 @@
 import Animelist from '@/Components/Animelist/index'
 import Pagination from '@/Components/Utils/Pagination'
 import HeaderMenu from '@/Components/Utils/HeaderMenu'
-import { getAnimeResponse } from '@/app/libs/api-libs'
+import { getAnimeResponse } from '@/libs/api-libs'
 import React, { useEffect, useState } from 'react'
 
 const Page = () => {

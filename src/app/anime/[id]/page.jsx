@@ -1,5 +1,5 @@
 import VideoPlayer from "@/Components/Utils/VideoPlayer"
-import { getAnimeResponse } from "@/app/libs/api-libs"
+import { getAnimeResponse } from "@/libs/api-libs"
 import Image from "next/image"
 
 const Page = async ({ params: { id } }) => {
@@ -32,14 +32,17 @@ const Page = async ({ params: { id } }) => {
                 alt={anime.data.images.jpg.image_url}
                 width={250}
                 height={250}
-                className="w-full rounded object-cover"
+                className="w-full md:p-0 p-4 rounded-lg object-cover"
             >
             </Image>
-            <p className="text-justify text-xl">{anime.data.synopsis}</p>
+            <p className="text-justify text-xl md:p-0 p-4">{anime.data.synopsis}</p>
         </div>
         <div className="">
             <VideoPlayer youtubeId={anime.data.trailer.youtube_id} />
         </div>
     </>)
 }
+
+
+
 export default Page

@@ -9,7 +9,6 @@ const VideoPlayer = ({ youtubeId }) => {
         height: "250"
     }
     const [isOpen, setIsOpen] = useState(true)
-
     const handleCloseButton = () => {
         setIsOpen((prevState) => !prevState)
     }
@@ -34,7 +33,6 @@ const VideoPlayer = ({ youtubeId }) => {
             </button>
         </>)
     }
-
     return (isOpen) ? <Player /> : <ButtonHide />
 };
 

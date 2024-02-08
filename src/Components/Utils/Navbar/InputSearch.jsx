@@ -7,7 +7,7 @@ const InputSearch = () => {
     const router = useRouter()
     const handleSearch = (event) => {
         event.preventDefault()
-        if (searchRef.current.value.length > 0) {
+        if (searchRef.current.value.length > 0 && searchRef.current.value.trim() !== "") {
             router.push(`/search/${searchRef.current.value}`)
         }
     }
@@ -25,4 +25,5 @@ const InputSearch = () => {
         </div>
     </>)
 }
+
 export default InputSearch
