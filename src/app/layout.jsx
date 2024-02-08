@@ -5,7 +5,7 @@ import Navbar from "../Components/Utils/Navbar";
 const poppins = Gabarito({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "CuyAnimelist",
+  title: "Hanzo Anime",
   description: "Website Anime",
 };
 

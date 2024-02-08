@@ -22,7 +22,7 @@ const VideoPlayer = ({ youtubeId }) => {
                         event.target.pauseVideo();
                     }}
                     opts={option}
-                    onError={() => { alert('Video Is Broken') }}
+                    onError={() => { alert('Videonya Gak ada Cuy , Awokawokawok') }}
                 />
             </div>)
     }
